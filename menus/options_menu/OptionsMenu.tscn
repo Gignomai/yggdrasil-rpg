@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://menus/options_menu/OptionsMenu.gd" type="Script" id=1]
+
+[node name="OptionsMenu" type="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsMenu" type="VBoxContainer" parent="."]
+margin_left = 480.5
+margin_top = 266.0
+margin_right = 542.5
+margin_bottom = 334.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackToMainMenuButton" type="Button" parent="OptionsMenu"]
+margin_right = 62.0
+margin_bottom = 20.0
+button_mask = 0
+text = "Back"
+[connection signal="pressed" from="OptionsMenu/BackToMainMenuButton" to="." method="_on_BackToMainMenuButton_pressed"]
